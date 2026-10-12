@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>GIT / GITHUB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0d1117;
+            color: #c9d1d9;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 { color: #58a6ff; text-align: center; }
+        h2 {
+            color: #58a6ff;
+            border-left: 4px solid #58a6ff;
+            padding-left: 10px;
+            margin-top: 35px;
+        }
+        h3 { color: #79c0ff; }
+        pre {
+            background: #161b22;
+            padding: 15px;
+            border-radius: 8px;
+            color: #7ee787;
+            overflow-x: auto;
+        }
+        code {
+            background: #161b22;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #7ee787;
+        }
+        .box {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #30363d;
+            padding: 10px;
+            text-align: left;
+        }
+        th { background: #161b22; color: #58a6ff; }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #8b949e;
+            border-top: 1px solid #30363d;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>GIT / GITHUB</h1>
+<p style="text-align:center;">Importanța utilizării aplicațiilor de lucru în echipă</p>
+
+<h2>01 — Fundamente</h2>
+
+<h3>Ce este Git?</h3>
+<p>Git este un sistem distribuit de control al versiunilor, creat de Linus Torvalds în 2005. Urmărește fiecare modificare a codului și permite colaborarea mai multor developeri.</p>
+
+<h3>Ce este GitHub?</h3>
+<p>GitHub este o platformă cloud pentru găzduirea repository-urilor Git, cu funcții de colaborare: pull requests, issues, code review, Actions.</p>
+
+<h2>02 — Fluxul de lucru în echipă</h2>
+
+<div class="box"><b> Fork & Clone</b> — fiecare membru are o copie locală a proiectului.</div>
+<div class="box"><b> Branch</b> — fiecare funcție se dezvoltă pe un branch separat.</div>
+<div class="box"><b> Pull Request</b> — modificările sunt revizuite de colegi.</div>
+<div class="box"><b> Merge & Deploy</b> — codul aprobat este integrat în <code>main</code>.</div>
+
+<h2>03 — De ce contează</h2>
+
+<div class="box"><b> Siguranța codului</b> — nicio modificare nu se pierde.</div>
+<div class="box"><b> Productivitate</b> — mai mulți developeri lucrează simultan.</div>
+<div class="box"><b> Transparență</b> — fiecare commit arată cine, ce și de ce a modificat.</div>
+<div class="box"><b> CI/CD</b> — GitHub Actions testează și publică automat.</div>
+<div class="box"><b> Colaborare remote</b> — echipe din whole lume lucrează împreună.</div>
+<div class="box"><b> Documentare</b> — commit-urile și PR-urile documentează proiectul.</div>
+
+<h2>04 — Comenzi esențiale</h2>
+
+<table>
+    <tr><th>Comandă</th><th>Descriere</th></tr>
+    <tr><td><code>git init</code></td><td>Inițializează repository</td></tr>
+    <tr><td><code>git clone &lt;url&gt;</code></td><td>Clonează repository</td></tr>
+    <tr><td><code>git checkout -b feature/x</code></td><td>Creează branch nou</td></tr>
+    <tr><td><code>git add .</code></td><td>Adaugă modificările</td></tr>
+    <tr><td><code>git commit -m "mesaj"</code></td><td>Salvează modificările</td></tr>
+    <tr><td><code>git push origin main</code></td><td>Trimite pe server</td></tr>
+    <tr><td><code>git pull origin main</code></td><td>Actualizează local</td></tr>
+    <tr><td><code>git log --oneline</code></td><td>Vezi istoricul</td></tr>
+</table>
+
+<h2>05 — Adopție globală</h2>
+<div class="box">Companii Fortune 500 — <b>94%</b></div>
+<div class="box">Developeri profesioniști — <b>87%</b></div>
+<div class="box">Proiecte open-source — <b>99%</b></div>
+<div class="box">Startup-uri tech — <b>98%</b></div>
+
+<h2>06 — Bune practici</h2>
+
+<h3>Mesaje de commit clare</h3>
+<pre>✗ git commit -m "fix"
+✓ git commit -m "fix: rezolvă eroarea 404 la logout"</pre>
+
+<h3>Denumire branch-uri</h3>
+<pre>feature/autentificare
+fix/eroare-import
+hotfix/vulnerabilitate
+docs/readme</pre>
+
+<h3>Protejați branch-ul main</h3>
+<p>Minim 1 aprobare, teste CI trecute, fără push direct pe <code>main</code>.</p>
+
+<footer>
+    Studiu de Caz — Git / GitHub · Lucrul la un proiect comun
+</footer>
+
+</body>
+</html>
